@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 31
+    buildToolsVersion '31.0.0'
+
+    defaultConfig {
+        applicationId "com.tuya.smart.sr"
+        minSdk 21
+        targetSdk 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk { abiFilters "armeabi-v7a", "arm64-v8a" }
+    }
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.0.1'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    lintOptions {
+        abortOnError false
+    }
+    android.packagingOptions {
+        //libc++_shared.so 库依赖重复，用这个方法去重
+        pickFirst 'lib/*/libc++_shared.so'
+        pickFirst 'lib/*/libgnustl_shared.so'
+    }
+
+    signingConfigs {
+        debug {
+//            storeFile file('')
+//            storePassword ''
+//            keyAlias ''
+//            keyPassword ''
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // Integration with activities
+    implementation 'androidx.activity:activity-compose:1.4.0'
+    // Compose Material Design
+    implementation 'androidx.compose.material:material:1.0.4'
+    // Animations
+    implementation 'androidx.compose.animation:animation:1.0.4'
+    // Tooling support (Previews, etc.)
+    implementation 'androidx.compose.ui:ui-tooling:1.0.4'
+    // Integration with ViewModels
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0'
+    // UI Tests
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.0.4'
+    // coil image
+    implementation 'io.coil-kt:coil-compose:1.3.0'
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+
+    implementation 'io.github.shenzhen2017:compose-refreshlayout:1.0.0'
+
+    //smartResidenceSDK
+    implementation 'com.tuya.smart:smartResidenceSDK:1.1.1'
+    //device group
+    implementation 'com.tuya.smart:tuyasmart-residence-bizbundle-groupmanager:1.0.0-1'
+    //device panel
+    implementation 'com.tuya.smart:tuyasmart-residence-bizbundle-panel:1.0.0-1'
+    //device detail
+    implementation 'com.tuya.smart:tuyasmart-residence-bizbundle-panelmore:1.0.0-1'
+    //device scan
+    implementation 'com.tuya.smart:tuyasmart-residence-bizbundle-device_activator:1.0.0-1'
+
+
+    api 'com.tuya.smart:tuyasmart-react-native-amap:3.31.0-rc.2'
+    implementation 'com.amap.api:search:7.9.0'
+    implementation 'com.amap.api:navi-3dmap:8.0.0_3dmap8.0.0'
+
+    api("com.tencent.yunxiaowei.dmsdk:core:2.3.0") {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+    api("com.tencent.yunxiaowei.webviewsdk:webviewsdk:2.3.0") {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
+}

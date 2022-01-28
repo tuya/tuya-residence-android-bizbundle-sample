@@ -1,0 +1,538 @@
+{
+  "pipeLine": {
+    "PIPE_LINE_TAB_LAUNCHER_STARTED": [
+      "com.tuya.smart.family.FamilyPipeLine",
+      "com.tuyasmart.stencil.BrowserInitPipeLine",
+      "com.tuya.smart.bluemesh.MeshAppStartPipeLine"
+    ],
+    "PIPE_LINE_BUSINESS_com.tuya.smart.initializer.custompipeline.UserAgreeScenarioType": [
+      "com.tuya.smart.jsbridge.WebWhiteListPipeline"
+    ],
+    "PIPE_LINE_BUSINESS_com.tuya.smart.commonbiz.api.login.LogoutPipelineScenarioType": [
+      "com.tuya.smart.commonbiz.DeviceLogoutPipeLine",
+      "com.tuyasmart.netaudit.LogoutPipeline"
+    ],
+    "PIPE_LINE_BUSINESS_PIPELINE_APPLICATION_START": [
+      "com.tuyasmart.netaudit.NaPipeLine",
+      "com.tuya.smart.uibizcomponents.UiBizComponentLaunchPipeline",
+      "com.tuya.smart.messagepush.MessagePushStartPipeLine",
+      "com.tuya.smart.theme.core.ThemeSyncPipeLine",
+      "com.tuya.smart.stat.StatPipeLine",
+      "com.tuya.smart.tuyamall.AppStartPipeLine",
+      "com.tuya.smart.panel.base.RNVersionPipeLine",
+      "com.tuya.smart.pushcenter.PushCenterPipeLine",
+      "com.tuya.smart.bleota.BlePipeLine",
+      "com.tuya.smart.login.base.LoginPipeLine"
+    ],
+    "PIPE_LINE_APPLICATION_SYNC": [
+      "com.tuya.smart.theme.core.ThemeSyncPipeLine",
+      "com.tuya.smart.stat.StatPipeLine",
+      "com.tuya.smart.tuyamall.AppStartPipeLine",
+      "com.tuya.smart.panel.base.RNVersionPipeLine",
+      "com.tuya.smart.pushcenter.PushCenterPipeLine",
+      "com.tuya.smart.bleota.BlePipeLine",
+      "com.tuya.smart.login.base.LoginPipeLine"
+    ],
+    "PIPE_LINE_APPLICATION_ASYNC": [
+      "com.tuyasmart.netaudit.NaPipeLine",
+      "com.tuya.smart.uibizcomponents.UiBizComponentLaunchPipeline",
+      "com.tuya.smart.messagepush.MessagePushStartPipeLine"
+    ]
+  },
+  "pipeLineDeps": {},
+  "moduleMap": {
+    "com.tuya.smart.scan.ScanApp": [
+      "scan"
+    ],
+    "com.tuyasmart.stencil.BrowserApp": [
+      "browser"
+    ],
+    "com.tuya.smart.ipc.panelmore.PanelMoreApp": [
+      "camera_panel_more",
+      "camera_motion_monitor",
+      "camera_panel_info",
+      "camera_time_zone_select",
+      "camera_base_setting",
+      "camera_ir_night_vision",
+      "camera_motion_sensitivity",
+      "camera_talk_mode",
+      "camera_night_version_mode",
+      "camera_display_adjust",
+      "camera_volume_adjust",
+      "camera_work_mode",
+      "camera_private_zone",
+      "camera_pir",
+      "camera_electric",
+      "camera_bell_settings",
+      "camera_siren_adjust",
+      "camera_video_layout",
+      "camera_storage"
+    ],
+    "com.tuya.smart.safety.SafetyApp": [
+      "account_and_safety",
+      "modifyPassword"
+    ],
+    "com.tuya.smart.ipc.presetpoint.PresetPointApp": [
+      "camera_preset_point"
+    ],
+    "com.tuya.smart.netpool.NetPoolModuleApp": [
+      "DeviceNetInfo"
+    ],
+    "com.tuya.smart.ipc.camera.multipanel.MultiPanelApp": [
+      "camera_mutli_panel"
+    ],
+    "com.tuya.com.personal_setting.SettingApp": [
+      "setting"
+    ],
+    "com.tuya.smart.panel_webview.PanelWebModuleApp": [
+      "panel_h5"
+    ],
+    "com.tuya.smart.camera.wifiswitch.WifiSwitchApp": [
+      "camera_wifi_switch"
+    ],
+    "com.tuya.smart.scene.lighting.SceneLightingApp": [
+      "addLightingScene"
+    ],
+    "com.tuya.smart.ipc.camera.doorbellpanel.DoorbellPanelApp": [
+      "camera_door_bell",
+      "doorbell_camera_panel",
+      "doorbell_camera_playback_panel",
+      "camera_action_doorbell",
+      "ipc_doorbell_remote_unlock"
+    ],
+    "com.tuya.smart.ipc.camera.tocopanel.TocoPanelApp": [
+      "toco_camera_panel"
+    ],
+    "com.tuya.smart.netdiagnosis.NetDiagnosisModuleApp": [
+      "netdiagnosis_home",
+      "netdiagnosis_action"
+    ],
+    "com.tuya.smart.tuyasmart_videocutter.VideoCutterApp": [
+      "videocutter"
+    ],
+    "com.tuya.smart.personal_third_service.MoreServiceApp": [
+      "more_service",
+      "settingMoreService"
+    ],
+    "com.tuya.smart.login.base.LoginApp": [
+      "bind_cellphonestyle1",
+      "bind_email_style",
+      "login_registerstyle1",
+      "change_password",
+      "complete_user_information",
+      "login_exit_experience",
+      "change_phone_email",
+      "route_logoff",
+      "activity_login",
+      "privacyPage",
+      "notReceiveCodepage",
+      "resetToHome",
+      "resetToLogin",
+      "userProtocalPage"
+    ],
+    "com.tuya.smart.ipc.localphotovideo.LocalPhotoVideoApp": [
+      "camera_local_video_photo",
+      "ipc_driving_recorder_album"
+    ],
+    "com.tuya.smart.map.geofence.MapGeoFenceModuleApp": [
+      "map_geofence",
+      "request_permission_activity"
+    ],
+    "com.tuya.smart.commonbiz.shortcut.PinShortcutApp": [
+      "pinned_shortcut"
+    ],
+    "com.tuya.smart.ipc.station.StationApp": [
+      "ipc_base_station",
+      "ipc_base_station_storage"
+    ],
+    "com.tuya.smart.scene.logs.SceneLogApp": [
+      "scene_log_list",
+      "executeFail"
+    ],
+    "com.tuya.smart.ipc.camera.rnpanel.RnPanelApp": [
+      "rn_camera_panel"
+    ],
+    "com.tuya.smart.group.GroupModuleApp": [
+      "group",
+      "zigbee_pair",
+      "meshGroupEdit",
+      "presentMeshGroup",
+      "meshLocalGroup",
+      "meshGroupAdd",
+      "add_wifi_standard_group",
+      "edit_wifi_standard_group",
+      "add_general_group",
+      "edit_general_group",
+      "add_sigmesh_standard",
+      "edit_sigmesh_standard"
+    ],
+    "com.tuya.smart.gallery.GalleryPickerApp": [
+      "gallerypicker"
+    ],
+    "com.tuya.smart.perosnal_about.AboutApp": [
+      "about"
+    ],
+    "com.tuya.smart.bleota.BleOtaModuleApp": [
+      "single_ble_ota_upgrade"
+    ],
+    "com.tuya.smart.ipc.cloud.panel.CloudPanelApp": [
+      "camera_cloud_panel"
+    ],
+    "com.tuya.smart.panel.RNModuleApp": [
+      "panel_rn"
+    ],
+    "com.tuya.smart.activator.entrance.ActivatorEntranceApp": [
+      "config_device",
+      "config_device_home",
+      "scan_dev_config",
+      "device_scan_add",
+      "scan_add_virtual_device",
+      "scan_gprs_dev_config",
+      "scan_parse_qrcode_device_bind",
+      "device_gw_sub_config",
+      "device_offline_reconnect"
+    ],
+    "com.tuya.smart.camera.whitepanel.WhitePanelApp": [
+      "camera_panel"
+    ],
+    "com.tuya.smart.control.ControlModuleApp": [
+      "devLink",
+      "devMultiLink",
+      "devSyncControl"
+    ],
+    "com.tuya.smart.migration.MigrationModuleApp": [
+      "inMigration",
+      "inputCodeMigration",
+      "GatewayMigration"
+    ],
+    "com.tuya.smart.panel.newota.OtaModuleApp": [
+      "update_firmware"
+    ],
+    "com.tuya.smart.country.select.CountrySelectApp": [
+      "country_list"
+    ],
+    "com.tuya.smart.sim.IotCardApp": [
+      "real_name_certification"
+    ],
+    "com.tuya.smart.message.MessageApp": [
+      "messageCenter",
+      "message_details",
+      "push_setting"
+    ],
+    "com.tuya.smart.ipc.ap.ApApp": [
+      "camera_ap_panel"
+    ],
+    "com.tuya.smart.camera.blackpanel.BlackPanelApp": [
+      "camera_panel_2",
+      "camera_playback_panel"
+    ],
+    "com.tuya.device.base.info.DevBaseInfoModuleApp": [
+      "dev_base_info",
+      "dev_config_position"
+    ],
+    "com.tuya.smart.ipc.messagecenter.MessageCenterApp": [
+      "camera_video_panel",
+      "camera_audio_panel",
+      "camera_photo_panel",
+      "camera_message_panel",
+      "msg_media_play",
+      "camera_mjpeg_panel"
+    ],
+    "com.tuya.smart.google_flip.GoogleRouterModel": [
+      "unbind_google",
+      "ty_google_binding",
+      "bind_google"
+    ],
+    "com.tuya.smart.scene.SceneApp": [
+      "sceneAction",
+      "createScene",
+      "createScene_allDevices",
+      "editScene",
+      "editSmartScene",
+      "createSmartScene",
+      "createAuto",
+      "createAutoWithCondition",
+      "devManualAndSmart",
+      "createRNSceneTask",
+      "houseScene",
+      "ty_add_scene"
+    ],
+    "com.tuya.smart.jsbridge.HyBridBrowserApp": [
+      "hybrid_browser",
+      "tuyaweb"
+    ],
+    "com.tuya.smart.personal.PersonalApp": [
+      "personal_info",
+      "dev_shared_member_add",
+      "activity_share_edit",
+      "log_off",
+      "personal_choose_timezone"
+    ],
+    "com.tuya.smart.map.generalmap.MapModuleApp": [
+      "map_location_setting",
+      "family_location_setting"
+    ],
+    "com.tuya.smart.camera.CameraApp": [
+      "camera_action",
+      "videoCall",
+      "cameraPanel"
+    ],
+    "com.tuya.smart.ipc.camera.clouddisk.CloudDiskApp": [
+      "camera_cloud_disk"
+    ],
+    "com.tuya.smart.activator.auto.ui.TuyaAutoScanApp": [
+      "device_gw_sub_device_help_list",
+      "device_only_search_config_gw_sub",
+      "presentGatewayCategroy",
+      "config_lightning_search_config"
+    ],
+    "com.tuya.social.amazon.AmazonApp": [
+      "alexa_account_linking"
+    ],
+    "com.tuya.smart.tuyamall.MallModuleApp": [
+      "mall_user_center"
+    ],
+    "com.tuya.smart.panel.alarm.AlarmModuleApp": [
+      "addAlarm",
+      "alarm",
+      "bleAlarm",
+      "newAlarm",
+      "groupAlarm"
+    ],
+    "com.tuya.smart.panel.base.PanelModuleApp": [
+      "rn",
+      "more",
+      "panel_more",
+      "device_info",
+      "dev_network_check",
+      "panelMore",
+      "panelAction",
+      "galaxy_link_management"
+    ],
+    "com.tuya.smart.ipc.recognition.FaceRecognitionApp": [
+      "camera_face_recognition"
+    ],
+    "com.tuya.smart.family.main.view.FamilyApp": [
+      "familyAction",
+      "family_manage",
+      "add_family",
+      "complete_family",
+      "room_manage",
+      "family_setting",
+      "tysh_family_setting",
+      "join_family",
+      "room_setting",
+      "tysh_family_add_member_rn",
+      "tysh_family_link_member_rn",
+      "member_info",
+      "rn_add_member",
+      "add_member",
+      "family_member"
+    ],
+    "com.tuya.smart.bluemesh.BlueMeshApp": [
+      "meshAction",
+      "meshAlarm"
+    ],
+    "com.tuya.smart.activator.bluescan.ui.BlueScanModuleApp": [
+      "blueScan"
+    ],
+    "com.tuya.smart.ipc.UIVideoModuleApp": [
+      "camera_video_view"
+    ],
+    "com.tuya.smart.ipc.old.panelmore.OldPanelMoreApp": [
+      "camera_old_motion_monitor",
+      "camera_old_panel_more"
+    ],
+    "com.tuya.smart.VideoApp": [
+      "video_or_pic"
+    ],
+    "com.tuya.smart.feedback.FeedbackApp": [
+      "helpAndFeedBack",
+      "add_feedback",
+      "feedback_list",
+      "helpCenter",
+      "chooseFeedbackType"
+    ]
+  },
+  "serviceMap": {
+    "com.tuya.smart.android.network.audit.api.AbsLoadDomainListService": "com.tuyasmart.netaudit.service.AbsLoadDomainListServiceImpl",
+    "com.tuya.smart.data.api.AbsSceneDataService": "com.tuya.smart.data.SceneDataServiceImpl",
+    "com.tuya.smart.commonbiz.api.family.AbsFamilyService": "com.tuya.smart.commonbiz.family.outside.FamilyService",
+    "com.tuya.smart.clearcache.api.ClearCacheService": "com.tuya.smart.clearcache.ClearCacheServiceImpl",
+    "com.tuya.smart.homepage.energy.management.api.AbsEnergyManagementService": "com.tuya.smart.homepage.energymanagement.EnergyManagementServiceImpl",
+    "com.tuya.smart.ipc.panel.api.AbsCameraUiService": "com.tuya.smart.ipc.panelmore.CameraUiService",
+    "com.tuya.smart.panelapi.AbsPanelLaunchOptionService": "com.tuya.panel.launchoption.PanelLaunchOptionService",
+    "com.tuya.smart.sociallogin_api.GoogleFlipService": "com.tuya.smart.google_flip.GoogleFlipServiceImpl",
+    "com.tuya.smart.api.loginapi.SplashService": "com.tuya.smart.splash.SplashServiceImpl",
+    "com.tuya.smart.scene.api.SceneDataService": "com.tuya.smart.scene.SceneDataServiceImpl",
+    "com.tuya.smart.tuyamall.api.TuyaMallService": "com.tuya.smart.tuyamall.TuyaMallServiceImpl",
+    "com.tuya.smart.pushcenter.track.AbsTrackStatService": "com.tuya.smart.pushcenter.stat.TrackStatImpl",
+    "com.tuya.smart.homepage.election.api.AbsElectionGatewayService": "com.tuya.smart.homepage.election.ElectionGatewayServiceImpl",
+    "com.tuya.smart.api.PushCenterService": "com.tuya.smart.pushcenter.PushCenterManagerService",
+    "com.tuya.smart.commonbiz.api.AbsDeviceService": "com.tuya.smart.commonbiz.DeviceServiceImpl",
+    "com.tuya.smart.homepage.api.AbsHomepageService": "com.tuya.smart.homepage.service.HomepageServiceImpl",
+    "com.tuya.smart.shortcuts.AbsShortcutsService": "com.tuya.smart.shortcuts.ShortcutsService",
+    "com.tuya.smart.message.api.MessageService": "com.tuya.smart.message.MessageServiceImpl",
+    "com.tuya.smart.scene.api.AbsSceneRouteService": "com.tuya.smart.scene.SceneRouteService",
+    "com.tuya.smart.map.AbsGoogleMapService": "com.tuya.smart.map.google.GoogleMapService",
+    "com.tuya.smart.scene.business.api.ITuyaSceneBusinessService": "com.tuya.smart.scene.business.TuyaSceneBusinessManager",
+    "com.tuya.smart.ipc.panel.api.AbsCameraPushService": "com.tuya.smart.camera.push.CameraPushServiceImpl",
+    "com.tuya.smart.activator.device.list.api.TyDeviceListService": "com.tuya.smart.activator.device.list.DeviceListServiceImpl",
+    "com.tuya.smart.android.network.audit.api.AbsWebRouteInfoService": "com.tuyasmart.netaudit.service.AbsWebRouteInfoServiceImpl",
+    "com.tuya.smart.activator.autoscan.ui.api.auto.TyAutoScanActivatorService": "com.tuya.smart.activator.auto.ui.TyAutoScanActivatorServiceImpl",
+    "com.tuya.smart.country.select.api.service.CountrySelectService": "com.tuya.smart.country.select.service.CountrySelectServiceImpl",
+    "com.tuya.smart.activator.bluescan.api.TyBlueScanService": "com.tuya.smart.activator.bluescan.TyActivatorBlueScanServiceImpl",
+    "com.tuya.smart.scene.api.SceneRefreshService": "com.tuya.smart.scene.SceneRefreshServiceImpl",
+    "com.tuya.smart.family.domainapi.AbsFamilyUseCaseService": "com.tuya.smart.family.domain.FamilyUseCaseService",
+    "com.tuya.smart.panel.ota.AbsOtaUseCaseService": "com.tuya.smart.ota.biz.OtaUseCaseService",
+    "com.tuya.smart.activator.config.api.TyDeviceActivatorService": "com.tuya.smart.activator.activation.ui.TyDeviceActivatorServiceImpl",
+    "com.tuya.smart.camera.rctpackage.caller.api.CameraRCTPackageCallerService": "com.tuya.smart.camera.rctpackage.caller.CameraRCTPackageCallerServiceImpl",
+    "com.tuya.smart.panel.ota.service.AbsOTACheckService": "com.tuya.smart.panel.newota.OTACheckService",
+    "com.tuya.smart.activator.ui.body.api.ActivatorUiBodyService": "com.tuya.smart.activator.ui.body.ActivatorUiBodyServiceImp",
+    "com.tuya.smart.activator.config.api.TyDeviceDiscoverService": "com.tuya.smart.activator.auto.ui.discover.TyDeviceDiscoverServiceImpl",
+    "com.tuya.smart.homepage.security.api.AbsSecurityService": "com.tuya.smart.homepage.security.SecurityServiceImpl",
+    "com.tuya.smart.panelapi.AbsPanelService": "com.tuya.smart.panel.service.PanelServiceImpl",
+    "com.tuya.smart.family.member.api.AbsFamilyMemberUseCaseApi": "com.tuya.smart.family.member.domain.FamilyMemberUseCaseApiImpl",
+    "com.tuya.smart.share.api.AbsChinaShareService": "com.tuya.smart.china.share.AbsChinaShareServiceImpl",
+    "com.tuya.smart.commonbiz.relation.api.AbsRelationService": "com.tuya.smart.commonbiz.relation.RelationServiceManager",
+    "com.tuya.smart.scene.edit.api.SceneEditService": "com.tuya.smart.scene.edit.SceneEditServiceImpl",
+    "com.tuya.smart.homepage.menu.api.AbsHomePageMenuService": "com.tuya.smart.homepage.menu.HomePageMenuService",
+    "com.tuya.smart.personalcenter.api.PersonalService": "com.tuya.smart.personal.PersonalServiceImpl",
+    "com.tuya.smart.alexa.authorize.api.AvsTokenService": "com.tuya.smart.alexa.authoriza.AvsTokenServiceImpl",
+    "com.tuya.tuyasmart.rn_share_api.RNLocalShareService": "com.tuya.tuyasmart.rn_local_share.LocalShareServiceImpl",
+    "com.tuya.smart.scene.condition.api.AbsSceneConditionService": "com.tuya.smart.scene.condition.SceneConditionServiceImpl",
+    "com.tuya.smart.panelcaller.api.AbsPanelSilentUpdateService": "com.tuya.smart.panelcaller.PanelCallerSilentUpdateManager",
+    "com.tuya.smart.activator.result.api.TyActivatorFailureService": "com.tuya.smart.activator.result.TyActivatorFailureServiceImpl",
+    "com.tuya.smart.api.loginapi.LoginService": "com.tuya.smart.login.base.service.LoginServiceImpl",
+    "com.tuya.smart.crashcaught.report.api.TuyaCrashService": "com.tuya.smart.crashcaught.tuya.TuyaCrashServiceImpl",
+    "com.tuya.smart.ota.api.BleOtaService": "com.tuya.smart.bleota.BleOtaServiceImpl",
+    "com.tuya.smart.activator.guide.api.TyGuideDeviceService": "com.tuya.smart.activator.guide.TyGuideDeviceServiceImpl",
+    "com.tuya.smart.activator.core.api.TyActivatorBtConfigService": "com.tuya.smart.activator.core.TyActivatorBtConfigServiceImpl",
+    "com.tuya.smart.panelcaller.api.AbsPanelCallerService": "com.tuya.smart.panelcaller.PanelCallerServiceImpl",
+    "com.tuyasmart.stencil.location.AmapLocationService": "com.tuya.chinalocation.AmapLocationServiceImpl",
+    "com.tuya.group_ui_api.GroupManagerService": "com.tuya.smart.group.GroupManagerImpl",
+    "com.tuya.smart.sim.api.AbsIotCardFlowService": "com.tuya.smart.sim.IotCardFlowService",
+    "com.tuya.smart.scene.lighting.api.SceneLightingService": "com.tuya.smart.scene.lighting.SceneLightingServiceImpl",
+    "com.tuya.smart.api.loginapi.LoginUserService": "com.tuya.smart.login.base.service.LoginUserServiceImpl",
+    "com.tuya.tuyasmart.rn_share_api.RNChinaShareService": "com.tuya.tuyasmart.rn_china_share.ChinaShareServiceImpl",
+    "com.tuya.smart.android.network.audit.api.AbsDomainReportEventService": "com.tuyasmart.netaudit.service.AbsDomainReportEventServiceImpl",
+    "com.tuya.smart.netdiagnosis.api.NetDiagnosisService": "com.tuya.smart.netdiagnosis.NetDiagnosisServiceImpl",
+    "com.tuya.smart.network.error.api.AbsNetworkErrorHandlerService": "com.tuya.smart.network.error.handler.NetworkErrorHandlerServiceImpl",
+    "com.tuya.smart.scene.api.SceneService": "com.tuya.smart.scene.ui.widget.SceneUiWidgetServiceImpl",
+    "com.tuya.smart.ipc.panel.api.AbsCameraSDcardService": "com.tuya.smart.ipc.panelmore.CameraSdcardService",
+    "com.tuya.smart.scene.action.api.AbsSceneActionService": "com.tuya.smart.scene.action.SceneActionServiceImpl",
+    "com.tuya.smart.scene.recommend.api.SceneRecommendService": "com.tuya.smart.scene.recommend.SceneRecommendServiceImpl",
+    "com.tuyasmart.stencil.location.GoogleLocationService": "com.tuya.googlelocation.GoogleLocationServiceImpl",
+    "com.tuya.smart.statapi.StatService": "com.tuya.smart.stat.StatServiceImpl",
+    "com.tuya.smart.activator.core.api.TyDeviceActiveService": "com.tuya.smart.activator.core.TyDeviceActiveServiceImpl",
+    "com.tuya.smart.homepage.health.center.api.AbsHealthCenterService": "com.tuya.smart.homepage.health.HealthCenterServiceImpl",
+    "com.tuya.smart.activator.config.api.TyActivatorWifiOperateService": "com.tuya.smart.activator.ui.kit.TyActivatorWifiOperateServiceImpl",
+    "com.tuya.smart.theme.dynamic.resource.api.AbsThemeDynamicResourceService": "com.tuya.smart.theme.dynamic.resource.ThemeDynamicResourceServiceImpl",
+    "com.tuya.smart.pushcenter.error.AbsErrorStatService": "com.tuya.smart.pushcenter.stat.StatExceptionImpl",
+    "com.tuya.smart.panel.ota.service.AbsOtaCallerService": "com.tuya.smart.panel.newota.OtaCallerService",
+    "com.tuya.smart.domain.api.AbsSceneDomainService": "com.tuya.smart.domain.SceneDomainServiceImpl",
+    "com.tuya.smart.homepage.activationtip.api.AbsDeviceActivationTipViewService": "com.tuya.smart.homepage.activationtip.service.DeviceActivationTipViewServiceImpl",
+    "com.tuya.android.dynamic_resource_api.AbsTuyaResourceService": "com.tuya.smart.theme.dynamic.resource.TuyaResourceServiceImpl",
+    "com.tuya.smart.avs.api.AvsLoginService": "com.tuya.smart.avs.login.AvsLoginServiceImpl",
+    "com.tuya.smart.scene.api.AbsSceneCommonService": "com.tuya.smart.scene.SceneCommonServiceImpl",
+    "com.tuya.smart.sensors.api.AbsSensorsService": "com.tuya.smart.sensors.SensorsService",
+    "com.tuya.smart.sharemanager.api.AbsShareManager": "com.tuya.smart.sharemanager.AbsShareManagerImpl",
+    "com.tuya.smart.api.service.H5Service": "com.tuya.smart.jsbridge.router.H5ServerImpl",
+    "com.tuya.smart.activator.result.api.TyActivatorSuccessService": "com.tuya.smart.activator.result.TyActviatorSuccessServiceImpl",
+    "com.tuya.smart.ipc.panel.api.AbsCameraFloatWindowService": "com.tuya.smart.camera.floatwindow.service.AbsCameraFloatWindowServiceIml",
+    "com.tuyasmart.stencil.location.LocationService": "com.tuya.smart.location.LocationServiceImpl",
+    "com.tuya.smart.feedback.api.FeedbackService": "com.tuya.smart.feedback.FeedbackServiceImpl",
+    "com.tuya.smart.familylist.api.AbsFamilyListService": "com.tuya.smart.familylist.ui.FamilyListServiceImpl",
+    "com.tuya.smart.homepage.popview.api.AbsHomePopViewService": "com.tuya.smart.homepage.popview.HomePopViewServiceImpl",
+    "com.tuya.smart.activator.bluescan.ui.api.TuyaBlueScanService": "com.tuya.smart.activator.bluescan.ui.TuyaBlueScanServiceImpl",
+    "com.tuya.smart.list.ui.api.AbsSceneListUiService": "com.tuya.smart.list.ui.SceneListUiServiceImpl",
+    "com.tuya.smart.scene.api.SceneMainService": "com.tuya.smart.scene.ui.SceneUiServiceImpl",
+    "com.tuya.smart.commonbiz.shortcut.api.AbsShortcutService": "com.tuya.smart.commonbiz.shortcut.ShortcutServiceImpl",
+    "com.tuya.smart.commonbiz.api.iconfont.AbsIconFontService": "com.tuya.smart.commonbiz.iconfont.IconFontServiceImpl",
+    "com.tuya.smart.api.loginapi.LoginPrivacyService": "com.tuya.smart.login_privacy.service.LoginPrivacyServiceImpl",
+    "com.tuya.smart.homepage.trigger.api.AbsHomepageTriggerService": "com.tuya.smart.homepage.trigger.HomepageTriggerService",
+    "com.tuya.smart.homepage.mask.api.AbsGuideService": "com.tuya.smart.homepage.mask.service.GuideServiceImpl",
+    "com.tuya.smart.android.network.audit.api.AbsCheckDomainService": "com.tuyasmart.netaudit.service.AbsCheckDomainServiceImpl",
+    "com.tuya.smart.scene.precondition.api.PreconditionService": "com.tuya.smart.scene.precondition.PreConditionServiceImpl",
+    "com.tuya.smart.panelapi.AbsPanelLifecycleService": "com.tuya.smart.panel.service.PanelLifecycleService",
+    "com.tuya.smart.theme.api.AbsThemeService": "com.tuya.smart.theme.ThemeServiceImpl",
+    "com.tuya.smart.camera.cloud.purchase.AbsCameraCloudPurchaseService": "com.tuya.smart.camera.cloud.purchase.CameraCloudPurchaseServiceImpl",
+    "com.tuya.smart.family.api.AbsFamilyBusinessService": "com.tuya.smart.family.AbsFamilyBusinessServiceImpl",
+    "com.tuya.device.base.info.api.AbsDevBaseInfoService": "com.tuya.device.base.info.DevBaseInfoService",
+    "com.tuya.smart.tuyatangramapi.TangramApiService": "com.tuya.smart.android.tangram.TangramServiceImpl",
+    "com.tuya.group_usecase_api.core.GroupCoreService": "com.tuya.smart.group.usecase.GroupCoreServiceImpl",
+    "com.tuya.smart.file.download.FileDownService": "com.tuya.smart.file.download.FileDownServiceImpl",
+    "com.tuya.smart.audiospectrum.api.AbsAudioSpectrumService": "com.tuya.smart.audiospectrum.AudioSpectrumService",
+    "com.tuya.smart.activator.relation.api.TyActivatorRelationService": "com.tuya.smart.activator.relation.TyActivatorRelationServiceImpl",
+    "com.tuya.smart.homepage.exposure.api.AbsItemViewReporterService": "com.tuya.smart.homepage.exposure.ItemViewReporterService",
+    "com.tuya.smart.map.AbsAmapService": "com.tuya.smart.map.amap.AmapService",
+    "com.tuya.smart.mesh.BlueMeshService": "com.tuya.smart.bluemesh.BlueMeshServiceImpl",
+    "com.tuya.smart.homepage.api.AbsHomeCommonLogicService": "com.tuya.smart.homepage.common.HomeCommonServiceImpl"
+  },
+  "eventMap": {
+    "global_clear_event": [
+      {
+        "name": "com.tuya.smart.camera.base.IPCBaseApp",
+        "thread": false
+      }
+    ],
+    "global_user_event": [
+      {
+        "name": "com.tuya.smart.ipc.camera.rnpanel.RnPanelApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.camera.CameraApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.activator.auto.ui.TuyaAutoScanApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.tuyamall.MallModuleApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.splash.SplashApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.personal.PersonalApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.ipc.UIVideoModuleApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.family.main.view.FamilyApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.homepage.HomePageApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.rnplugin.tyrctimageencryptuploadmanager.p2p.P2PModuleManager",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.jsbridge.HyBridBrowserApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.scene.SceneApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.smart.bluemesh.BlueMeshApp",
+        "thread": false
+      },
+      {
+        "name": "com.tuya.social.amazon.AmazonApp",
+        "thread": false
+      }
+    ]
+  }
+}

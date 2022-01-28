@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tuya.smart.sr">
+
+    <application
+        android:name=".srdemo.TuyaSmartApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base_BizBundle_Theme"
+        tools:replace="android:allowBackup,android:supportsRtl,android:theme">
+
+        <meta-data
+            android:name="TUYA_SMART_APPKEY"
+            android:value="" />
+        <meta-data
+            android:name="TUYA_SMART_SECRET"
+            android:value="" />
+
+        <activity
+            android:name=".srdemo.account.SigninActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".srdemo.account.SignupActivity" />
+        <activity android:name=".srdemo.site.AddMemberActivity" />
+        <activity android:name=".srdemo.MainActivity" />
+        <activity android:name=".srdemo.account.ResetPasswordActivity" />
+        <activity android:name=".srdemo.personal.PersonalManagerActivity" />
+        <activity android:name=".srdemo.personal.TimeZoneActivity" />
+        <activity android:name=".srdemo.site.SiteDetailActivity" />
+        <activity android:name=".srdemo.access.AddAppAccessActivity" />
+        <activity android:name=".srdemo.site.CreateSiteActivity" />
+        <activity android:name=".srdemo.site.ModifySiteActivity" />
+        <activity android:name=".srdemo.site.ExpiredListActivity" />
+        <activity android:name=".srdemo.site.CurrentSiteActivity" />
+        <activity android:name=".srdemo.access.DeviceListActivity" />
+        <activity android:name=".srdemo.access.QueryAppAccessActivity" />
+        <activity android:name=".srdemo.access.AppAccessDetailActivity" />
+        <activity android:name=".srdemo.access.QueryPasswordAccessActivity" />
+        <activity android:name=".srdemo.access.PasswordAccessDetailActivity" />
+        <activity android:name=".srdemo.access.AddPasswordAccessActivity" />
+        <activity android:name=".srdemo.access.AppDeviceListActivity" />
+        <activity android:name=".srdemo.access.PasswordDeviceListActivity" />
+        <activity android:name=".srdemo.access.UpdateAppAccessActivity" />
+        <activity android:name=".srdemo.access.UpdatePasswordAccessActivity" />
+        <activity android:name=".srdemo.uibusiness.UiBusinessPackegeActivity" />
+    </application>
+
+</manifest>
